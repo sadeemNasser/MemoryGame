@@ -9,45 +9,48 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-
     <div class="container">
         <header>
             <h1>Matching Game</h1>
         </header>
 
         <section class="score-panel">
-            <ul class="stars" id="stars"></ul>
 
+            <ul class="stars" id="stars">
+                
+            </ul>
             <span class="moves"></span> Moves
-            
             <span class="timer"></span>
-
             <div class="restart" onclick="reset()">
                 <i class="fa fa-repeat"></i>
             </div>
+
         </section>
 
         <ul class="deck">
             
         </ul>
+
         <div id="popup-box" class="popup-box">
             <div class="popup">
                 <a id="close" href=# >×</a>
                 <div class="content">
                     Congratulations 
                 </div>
+
                 <div class="content">
                     <p>You made <span id=finalMove> </span> moves </p>
                     <p>in <span id=totalTime> </span> </p>
-                    <p>Rating:  <span id=starRating></span></p>
+                    <p>Rating:  <span id=star-rating></span></p>
                 </div>
+
                 <button id="play-again"onclick="playAgain()">
                     Play again </a>
                 </button>
+
             </div>
         </div>
     </div>
-
     <script src="js/app.js"></script>
 </body>
 </html>
