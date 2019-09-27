@@ -78,9 +78,9 @@ function addMove() {
 
 function rating() {
 
-    if( moves < 10) {
+    if( moves < 12) {
         stars = star + star + star;
-    } else if( moves < 15) {
+    } else if( moves < 20) {
         stars = star + star;
     } else {
         stars = star;
