@@ -116,9 +116,9 @@ function reset() {
 function isOver() {
     if(matchedCards.length === 16) {
         modal.classList.add("show");
-        document.getElementById("finalMove").innerHTML = moves;
-        document.getElementById("starRating").innerHTML = stars;
-        document.getElementById("totalTime").innerHTML = totalSeconds +' seconds';
+        document.getElementById("final-move").innerHTML = moves;
+        document.getElementById("star-rating").innerHTML = stars;
+        document.getElementById("total-time").innerHTML = totalSeconds +' seconds';
         stopTimer();
         closeModal();
     }
